@@ -29,3 +29,24 @@ function changeFruit(fruit) {
 }
 
 console.log(changeFruit(fruit));
+
+//question 4
+
+function maxNumber(array) {
+    return Math.max(...array);
+}
+
+const answer = maxNumber([2, -10, 4, -20]);
+console.log(`Maximum value is ${answer}`);
+
+//question 5
+
+const valTimesIndex = (items) => {
+    return (
+        items.map((item, index) => {
+            return item * index;
+        })
+    )
+}
+const valTimes = valTimesIndex([3, 4, 2]);
+console.log(valTimes);
